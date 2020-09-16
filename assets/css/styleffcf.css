@@ -5975,3 +5975,27 @@ pre {
 .highlight {
 	background-color: #f8f8f8
 }
+
+.collapsible {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 9px;
+  width: 100%;
+	margin-bottom: 10px;
+  border: none;
+  text-align: center;
+  outline: #a8884b 5px solid;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  outline-color: invert;
+}
+
+.content {
+  padding: auto;
+  display: none;
+  overflow: hidden;
+  background-color: white;
+}
