@@ -25,5 +25,21 @@
 			<h3 id="season-points--rewards"><strong><a href="rewards.html">Season Points &amp; Rewards</a></strong></h3>
 			<p>Info on the prestige rewards for weekly &amp; season wins!</p>
     </div>
+    <script>
+      window.addEventListener('click', function(evt) {
+        if (evt.detail === 3) {
+          var x = evt.clientX;
+          var y = evt.clientY;
+          var img = new Image();
+          img.src = "assets/images/3men.png";
+          img.style.position = "absolute";
+          img.style.height = (img.height / 2) + 'px';
+          img.style.width = (img.width / 2) + 'px';
+          img.style.left = (x - (img.width/4)) + 'px';
+          img.style.top = (y - (img.height/4)) + 'px';
+          document.body.appendChild(img);
+        }
+      });
+    </script>
   </body>
 </html>
