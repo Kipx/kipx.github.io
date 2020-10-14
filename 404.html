@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179579904-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-179579904-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/styleffcf.css?v=360d12f835bd8ed42aef253c60f4fa7613ef7ab2">
+    <title>Page non-existant</title>
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      <h1><a href="index.html">This page doesn't exist yet. Click here to stop being here.</a></h1>
+    </div>
+    <script>
+      window.addEventListener('click', function(evt) {
+        if (evt.detail === 3) {
+          var x = evt.clientX;
+          var y = evt.clientY;
+          var img = new Image();
+          img.src = "assets/images/3men.png";
+          img.style.position = "absolute";
+          img.style.height = (img.height / 2) + 'px';
+          img.style.width = (img.width / 2) + 'px';
+          img.style.left = (x - (img.width/4)) + 'px';
+          img.style.top = (y - (img.height/4)) + 'px';
+          document.body.appendChild(img);
+        }
+      });
+    </script>
+  </body>
+</html>
