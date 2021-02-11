@@ -20,6 +20,10 @@
     <div class="container-lg px-3 my-5 markdown-body">
       <h1><a href="..">rLOR Tournaments</a></h1>
       <h1 id="fff">Funky February Fiesta</h1>
+      <button type="button" class="collapsible">Funky February Fiesta Infographic</button>
+      <div class="content">
+        <a href="../assets/images/LOR_Feb_v2.jpg" target="_blank"><img src="../assets/images/LOR_Feb_v2.jpg" style="display: block; margin-left: auto; margin-right: auto;"></img></a>
+      </div>
       <p>Four weeks, four tournaments, two timeslots, REAL FUNKY!</p>
       <table>
         <thead>
@@ -85,5 +89,21 @@
       </ul>
       <p><strong>» <a href="5.html">Season 5</a> | <a href="../sign-ups.html">Tournament Sign-ups</a> | <a href="../brackets.html">Tournament Brackets</a> | <a href="../rounds.html">Tournament Rounds</a> | <a href="../rewards.html">SP &amp; Rewards</strong> «</a></p>
     </div>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
